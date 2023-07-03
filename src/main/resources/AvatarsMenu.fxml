@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+
+<TilePane  orientation="VERTICAL" prefHeight="315.0" prefWidth="387.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.ProfileMenuViewController">
+   <VBox alignment="CENTER" prefHeight="417.0" prefWidth="61.0" spacing="10.0" TilePane.alignment="CENTER">
+      <children>
+          <ImageView accessibleText="1" fitHeight="113.0" fitWidth="119.0" onMouseClicked="#choose1">
+              <Image url="@1.jpg" />
+          </ImageView>
+          <ImageView accessibleText="1" fitHeight="117.0" fitWidth="123.0" onMouseClicked="#choose3">
+              <Image url="@3.jpg" />
+          </ImageView>
+          <ImageView accessibleText="1" fitHeight="112.0" fitWidth="123.0" onMouseClicked="#choose5">
+              <Image url="@5.jpg" />
+          </ImageView>
+      </children>
+   </VBox>
+   <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+      <children>
+      
+          <ImageView accessibleText="1" fitHeight="112.0" fitWidth="120.0" onMouseClicked="#choose2">
+              <Image url="@2.jpg" />
+          </ImageView>
+          <ImageView accessibleText="1" fitHeight="127.0" fitWidth="139.0" onMouseClicked="#choose4">
+              <Image url="@4.jpg" />
+          </ImageView>
+          <ImageView accessibleText="1" fitHeight="106.0" fitWidth="100.0" onMouseClicked="#choose6">
+              <Image url="@6.jpg" />
+          </ImageView>
+      </children>
+   </VBox>
+    <Button alignment="BOTTOM_CENTER" onMouseClicked="#backToProfile" text="back" />
+</TilePane>

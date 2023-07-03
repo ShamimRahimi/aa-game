@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.SettingsViewController">
+    <ChoiceBox fx:id="chooseHardship" layoutX="144.0" layoutY="76.0" onMouseClicked="#chooseHardship" prefWidth="150.0" value="choose difficulty">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="choose hardship" />
+                <String fx:value="1" />
+                <String fx:value="2" />
+                <String fx:value="3" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <ChoiceBox fx:id="chooseBallsCount" layoutX="317.0" layoutY="76.0" onMouseClicked="#chooseBallsCount" prefWidth="150.0" value="choose balls count">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="choose balls count" />
+                <String fx:value="4" />
+                <String fx:value="8" />
+                <String fx:value="12" />
+                <String fx:value="16" />
+                <String fx:value="20" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button layoutX="235.0" layoutY="162.0" onMouseClicked="#chooseGameMap" text="choose game map" />
+    <Button fx:id="muteButton" layoutX="310.0" layoutY="200.0" onMouseClicked="#mute" text="mute" />
+    <Button layoutX="235.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#BWTheme" text="BWTheme" />
+    <ChoiceBox fx:id="chooseLanguage" layoutX="144.0" layoutY="119.0" onMouseClicked="#chooseLanguage" prefWidth="150.0" value="choose language">
+        <items>
+            <FXCollections fx:factory="observableArrayList">
+                <String fx:value="choose language" />
+                <String fx:value="Persian" />
+                <String fx:value="English" />
+            </FXCollections>
+        </items>
+    </ChoiceBox>
+    <Button layoutX="234.0" layoutY="341.0" mnemonicParsing="false" onMouseClicked="#backToMainMenu" text="back to main menu" />
+   <ChoiceBox fx:id="playersNumber" layoutX="317.0" layoutY="119.0" onMouseClicked="#choosePlayersNumber" prefHeight="26.0" prefWidth="157.0" value="choose players number">
+       <items>
+           <FXCollections fx:factory="observableArrayList">
+               <String fx:value="1" />
+               <String fx:value="2" />
+           </FXCollections>
+       </items>
+   </ChoiceBox>
+   <Text layoutX="231.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" textAlignment="CENTER">
+      <font>
+         <Font name="Avenir Book" size="35.0" />
+      </font>
+   </Text>
+   <TextField fx:id="shootBallsKey" layoutX="197.0" layoutY="236.0" prefHeight="26.0" prefWidth="218.0" promptText="the name of the key for shooting balls" />
+   <TextField fx:id="moveRightKey" layoutX="187.0" layoutY="271.0" prefHeight="26.0" prefWidth="239.0" promptText="the name of the key for moving balls right" />
+   <TextField fx:id="moveLeftKey" layoutX="196.0" layoutY="306.0" prefHeight="26.0" prefWidth="228.0" promptText="the name of the key for moving balls left" />
+</Pane>
